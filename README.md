@@ -1,4 +1,4 @@
-<img src="img/pokitbeasts.png" alt="drawing" width="150px"/>
+<img src="img/pokitbeasts.png" alt="drawing" width="250px"/>
 pokitto rpg game
 
 # open pokitto rpg project
