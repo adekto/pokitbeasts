@@ -1,0 +1,6 @@
+{
+    "terminal.integrated.env.osx": {
+        "PATH": "/Users/adekto/.platformio/penv/bin:/Users/adekto/.platformio/penv:/Users/adekto/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin",
+        "PLATFORMIO_CALLER": "vscode"
+    }
+}
