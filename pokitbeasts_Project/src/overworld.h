@@ -1,11 +1,13 @@
 #include "Pokitto.h"
 
+//SDFileSystem sd(P0_9,P0_8, P0_6, P0_7,"sd");
+   /*
 void loadovermap(uint16_t x, uint16_t y){
-    /*
+ 
     if(!sd.disk_initialize()){
-    if(opendir("/sd/pokitbeasts.pok")==0){ err=" no pokitbeasts.pok on sd";}
+    if(opendir("/pokitbeasts.pok")==0){ err=" no pokitbeasts.pok on sd";}
     else{
-        static FILE *fp = fopen("/sd/pokitbeasts.pok/overmap.data", "rb");
+        static FILE *fp = fopen("/pokitbeasts.pok/overmap.data", "rb");
         if(fp == NULL) {err ="could not load overmap"; }
         else{
         //fsetpos(fp,0);
@@ -22,8 +24,26 @@ void loadovermap(uint16_t x, uint16_t y){
         }
     }
   }
-  */
+
 }
+*/
+void loadovermap(uint16_t x, uint16_t y){
+    fileSeekAbsolute(x+(y*256));
+    for(uint8_t i = 0; i <30; i++){
+        fileReadBytes((uint8_t*)mapdate[i],30);
+        fileSeekRelative(256-30);
+    }
+}
+void initOverworld(){
+    getFirstDirEntry();
+    /*
+    uint32_t myFile = fileOpen("POKBEAST.MAP", FILE_MODE_READONLY);
+    if( !myFile ){
+      loadovermap(1,1);
+    }*/
+    if(!fileOpen("POKBEAST.DAT", FILE_MODE_READONLY)) loadovermap(0,0);
+}
+
 void drawOverworld(){
     int ofsetx = player.x%240;
     int ofsety = player.y%240;
@@ -50,4 +70,7 @@ void drawOverworld(){
     //game.display.drawBitmap(10,10,playersprite[0]);
     player.draw(100,68);
     player.move();
+
+    
+   
 }

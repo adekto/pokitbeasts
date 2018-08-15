@@ -53,6 +53,7 @@ int main () {
     player.x = 0;
     player.y = 0;
 
+    initOverworld();
     //main game loop
     while (game.isRunning()) {
 

@@ -32,10 +32,10 @@ class character {
     void draw(int x, int y){
         if(isanim){
              anim++;
-             anim = anim%12;
+             anim = anim%6;
         }else anim =0;
         static const uint8_t animate[] = {0,1,1,0,2,2};
-        game.display.drawBitmap(x,y,playersprite[index+animate[anim/2]],0,flip);
+        game.display.drawBitmap(x,y,playersprite[index+animate[anim]],0,flip);
     
     }
     void move(){
@@ -92,7 +92,7 @@ class character {
         }
     }
    private:
-    int speed = 2;
+    int speed = 4;
     uint8_t loopindex =0;
     int index =0;
     int flip = 0;
