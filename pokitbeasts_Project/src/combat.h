@@ -27,10 +27,10 @@ void initcombat(uint8_t beast){
     isBattle = true;
     game.display.clear();
     game.display.persistence = true;
-    fileSeekAbsolute(BEASTSPRITES+(beast*2048));
-    fileReadBytes(game.display.screenbuffer+2,2048);
-    game.display.screenbuffer[0] = 64;
-    game.display.screenbuffer[1] = 64;
+    fileSeekAbsolute(BEASTSPRITES+(beast*8192));
+    fileReadBytes(game.display.screenbuffer+2,8192);
+    game.display.screenbuffer[0] = 128;
+    game.display.screenbuffer[1] = 128;
     uint8_t color[2];
     for(size_t i = 0; i < 16; i++)
     {

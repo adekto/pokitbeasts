@@ -39,7 +39,8 @@ char mapdate[30][30]={
 
 bool isBattle = false;
 void initcombat(uint8_t beast);
-
+void save();
+void load();
 #include "player.h"
 
 #include "overworld.h"

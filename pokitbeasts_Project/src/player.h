@@ -51,6 +51,12 @@ class character {
             if (game.buttons.repeat(BTN_C,0)){
                 initcombat(0);
             }
+            if (game.buttons.repeat(BTN_A,0)){
+                save();
+            }
+            if (game.buttons.repeat(BTN_B,0)){
+                load();
+            }
             if (game.buttons.repeat(BTN_LEFT,0)){
                 index = 2*3;
                 flip =0;
