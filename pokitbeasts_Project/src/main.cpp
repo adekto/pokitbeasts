@@ -36,6 +36,10 @@ char mapdate[30][30]={
     } 
     
 };
+
+bool isBattle = false;
+void initcombat(uint8_t beast);
+
 #include "player.h"
 
 #include "overworld.h"
@@ -57,9 +61,10 @@ int main () {
     //main game loop
     while (game.isRunning()) {
 
-        if (game.update()) {
+        if (game.update(isBattle)) {
             //game.display.print("test dialog");
-            drawOverworld();
+            if(isBattle) drawcombat();
+            else drawOverworld();
         }
     }
 
