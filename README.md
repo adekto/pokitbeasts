@@ -12,3 +12,7 @@ project is setup for platformIO. [installation video](https://www.fokdat.tk/Poki
 # Licence
 All code is released under the MIT licence
 All graphics are released under the CC0 licence
+
+# Contributors
+* drummyfish
+* Pharap
