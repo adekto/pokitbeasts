@@ -14,5 +14,6 @@ All code is released under the MIT licence
 All graphics are released under the CC0 licence
 
 # Contributors
+* adekto
 * drummyfish
 * Pharap
