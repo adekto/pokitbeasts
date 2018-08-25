@@ -10,8 +10,11 @@ project is setup for platformIO. [installation video](https://www.fokdat.tk/Poki
 
 
 # Licence
-All code is released under the MIT licence
-All graphics are released under the CC BY-SA licence
+
+All code is released under the MIT licence.  
+All graphics are released under the [CC BY-SA 4.0 licence](https://creativecommons.org/licenses/by-sa/4.0/).  
+
+![CC BY-SA Graphic](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png)
 
 # Contributors
 * drummyfish
