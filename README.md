@@ -17,5 +17,6 @@ All graphics are released under the [CC BY-SA 4.0 licence](https://creativecommo
 ![CC BY-SA Graphic](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png)
 
 # Contributors
+* adekto
 * drummyfish
 * Pharap
